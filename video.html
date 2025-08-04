@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/video.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Rakshabandhan Video</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right,pink, #fff5f8, hotpink);
+      margin: 0;
+      padding: 0;
+      color: #5a2a2a;
+      text-align: center;
+    }
+
+    nav {
+      background:linear-gradient() hotpink pink ;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #8b0000;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #d6005c;
+    }
+
+    .video {
+      padding: 40px 20px;
+    }
+
+    .video h1 {
+      font-size: 2.5rem;
+      color: #c2185b;
+      margin-bottom: 25px;
+    }
+
+    video, iframe {
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(255, 105, 180, 0.3);
+      transition: all 0.4s ease;
+      width: 80%;
+      max-width: 800px;
+      height: auto;
+    }
+
+    video:hover, iframe:hover {
+      box-shadow: 0 0 35px rgba(255, 20, 147, 0.5);
+      transform: scale(1.02);
+    }
+
+    .video p {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (max-width: 600px) {
+      .video h1 {
+        font-size: 2rem;
+      }
+
+      video, iframe {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="http://127.0.0.1:5500/index.html">Home</a>
+    <a href="http://127.0.0.1:5500/gallery.html">Gallery</a>
+    <a href="http://127.0.0.1:5500/video.html">Video</a>
+  </nav>
+
+  <section class="video">
+    <h1>A Special Video Just for You 🎥</h1>
+
+    <!-- Option 1: Local video -->
+    <video controls="">
+      <source src="assets/rakhi-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Option 2: Embed YouTube video -->
+    <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe> -->
+
+    <p>This video says what my heart always wants to: Thank you for being my sister, my hero, and my strength. 💖</p>
+  </section>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>
